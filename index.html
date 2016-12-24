@@ -1,79 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <title>Fantastical Super Device</title>
+    <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
-    <title>Fantastical Super Device</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
+    <div class="container-fluid">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">Fantastical Super Device</a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#makeGroups">Make Groups</a></li>
-                <li><a href="#saQa">SA/QA</a></li>
-                <li><a href="#ranVolunteer">Volunteer</a></li>
-                <li><a href="#whiteBoard">Whiteboards</a></li>
-                <li><a href="#funCards">Cards</a></li>
-
-            </ul>
-        </div><!--/.nav-collapse -->
+        <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#assignGroups">Assign Groups</a></li>
+                    <li><a href="#saQa">SA/QA</a></li>
+                    <li><a href="#volunteer">Volunteer</a></li>
+                    <li><a href="#whiteboards">Whiteboards</a></li>
+                    <li><a href="#funCards">Cards</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </nav>
 
 <!--Creates Cohorts-->
 <!--Assigns Groups-->
-<div class="container" id="makeGroups">
+<div id="assignGroups" class="sections container-fluid">
     <div class="middleDiv">
         <h1>Assigns Groups</h1>
         <p class="lead">Assigns groups for group projects.<br>Can drag and drop students into new groups.</p>
     </div>
+    <!--Inputs-->
+    <!--<form>-->
+    <!--<div class="form-group col-md-4" >-->
+    <!--&lt;!&ndash;<label for="sel1">Select list (select one):</label>&ndash;&gt;-->
+    <!--<select class="form-control" id="sel1">-->
+    <!--<option>Choose Cohort..</option>-->
+    <!--<option>Cohort 11.16</option>-->
+    <!--<option>Cohort 1.16</option>-->
+    <!--</select>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;<div class="col-md-4">&ndash;&gt;-->
+    <!--<div class="input-group col-md-4">-->
+    <!--&lt;!&ndash;<label for="">Add Student to Cohort</label>&ndash;&gt;-->
+    <!--<input type="text" class="form-control" placeholder="Student Name">-->
+    <!--<span class="input-group-btn">-->
+    <!--<button class="btn btn-secondary" type="button">Add</button>-->
+    <!--</span>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--</form>-->
 
-    <form>
-        <div class="form-group col-md-4" >
-            <!--<label for="sel1">Select list (select one):</label>-->
-            <select class="form-control" id="sel1">
-                <option>Choose Cohort..</option>
-                <option>Cohort 11.16</option>
-                <option>Cohort 1.16</option>
-            </select>
+    <p>
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false"
+           aria-controls="collapseExample">
+            Cohort 11.16
+        </a>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+            Cohort 1.17
+        </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-block">
+            Cung, Sloan, Tammy, Brian, Miles, Mike, Jason, Sean G, Sean D, Patrick
         </div>
-        <!--<div class="col-md-4">-->
-            <div class="input-group col-md-4">
-                <!--<label for="">Add Student to Cohort</label>-->
-                <input type="text" class="form-control" placeholder="Student Name">
-                <span class="input-group-btn">
-                    <button class="btn btn-secondary" type="button">Add</button>
-                </span>
-            </div>
-        <!--</div>-->
-    </form>
+    </div>
+
 </div><!-- /.container -->
 
 <!--QA Picks Rand Group / Rand Student-->
-<div class="container" id="saQa">
+<div id="saQa" class="sections container-fluid">
     <div class="middleDiv">
         <h1>SA and QA</h1>
         <p class="lead">Picks Random Group and Random Student in Group<br> Generates team names from 2 arrays,
@@ -81,30 +96,34 @@
     </div>
 </div><!-- /.container -->
 
-<!--Rand Volunteer-->
-<div class="container" id="ranVolunteer">
+<!--Random Volunteer-->
+<div id="volunteer" class="sections container-fluid">
     <div class="middleDiv">
         <h1>Random Volunteer</h1>
-        <p class="lead">Picks a random volunteer from list of students.<br> Congrats, everyone took a step back and left
+        <p class="lead">Picks a random volunteer from list of students.<br> Congrats, everyone took a step back and
+            left
             you out in front.</p>
     </div>
 </div><!-- /.container -->
 
+
 <!--White Board Questions-->
-<div class="container" id="whiteBoard">
+<div id="whiteboards" class="sections container-fluid">
     <div class="middleDiv">
         <h1>White Board Questions</h1>
-        <p class="lead">Allows you to randomize or choose specific question for whiteboard.<br> Displays the question in
+        <p class="lead">Allows you to randomize or choose specific question for whiteboard.<br> Displays the
+            question in
             a large format.</p>
     </div>
 </div><!-- /.container -->
 
 <!--Drunk Cards-->
-<div class="container" id="funCards">
+<div id="funCards" class="sections container-fluid">
     <div class="middleDiv">
         <h1>Fun Cards</h1>
         <p class="lead">Randomly chooses Card from game.<br> Displays the card. Possibly chooses random student?</p>
     </div>
 </div><!-- /.container -->
+
 </body>
 </html>
