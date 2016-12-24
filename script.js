@@ -1,4 +1,14 @@
+/**
+ * Returns a random integer between minNum (inclusive) and maxNum (inclusive)
+ *
+ * @param minNum
+ * @param maxNum
+ * @returns {number}
+ */
 
+function getRandNum (minNum, maxNum){
+    return Math.floor(Math.random() * (maxNum - minNum + 1) + minNum );
+}
 // CREATES COHORTS
 // Input field that creates an array - cohort
 // Ability to add students to an array
