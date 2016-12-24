@@ -1,3 +1,8 @@
 body {
-    font-family: Roboto, Arial, sans-serif
+    padding-top: 50px;
+}
+
+.middleDiv {
+    padding: 40px 15px;
+    text-align: center;
 }

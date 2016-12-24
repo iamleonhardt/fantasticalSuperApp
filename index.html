@@ -5,20 +5,78 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <title>Fantastical Super Device</title>
 </head>
 <body>
-<h1>Fantastical Super Device</h1>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Fantastical Super Device</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Make Groups</a></li>
+                <li><a href="#saQa">SA/QA</a></li>
+                <li><a href="#cards">Volunteer</a></li>
+                <li><a href="#cards">Whiteboards</a></li>
+                <li><a href="#cards">Cards</a></li>
+
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
 
 <!--Creates Cohorts-->
 <!--Assigns Groups-->
-<!--QA Picks Rand Group / Rand Student-->
-<!--Rand Volunteer-->
-<!--White Board Questions-->
-<!--Drunk Cards-->
+<div class="container">
+    <div class="middleDiv">
+        <h1>Assigns Groups</h1>
+        <p class="lead">Assigns groups for group projects.<br>Can drag and drop students into new groups.</p>
+    </div>
+</div><!-- /.container -->
 
+<!--QA Picks Rand Group / Rand Student-->
+<div class="container">
+    <div class="middleDiv">
+        <h1>SA and QA</h1>
+        <p class="lead">Picks Random Group and Random Student in Group<br> Generates team names from 2 arrays, adjectiveArr and nounArr</p>
+    </div>
+</div><!-- /.container -->
+
+<!--Rand Volunteer-->
+<div class="container">
+    <div class="middleDiv">
+        <h1>Random Volunteer</h1>
+        <p class="lead">Picks a random volunteer from list of students.<br> Congrats, everyone took a step back and left you out in front.</p>
+    </div>
+</div><!-- /.container -->
+
+<!--White Board Questions-->
+<div class="container">
+    <div class="middleDiv">
+        <h1>White Board Questions</h1>
+        <p class="lead">Allows you to randomize or choose specific question for whiteboard.<br> Displays the question in a large format.</p>
+    </div>
+</div><!-- /.container -->
+
+<!--Drunk Cards-->
+<div class="container">
+    <div class="middleDiv">
+        <h1>Drunk Cards</h1>
+        <p class="lead">Randomly chooses Card from game.<br> Displays the card. Possibly chooses random student?</p>
+    </div>
+</div><!-- /.container -->
 </body>
 </html>
