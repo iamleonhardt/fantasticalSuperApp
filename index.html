@@ -5,10 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <title>Fantastical Super Device</title>
@@ -17,7 +21,8 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -45,13 +50,34 @@
         <h1>Assigns Groups</h1>
         <p class="lead">Assigns groups for group projects.<br>Can drag and drop students into new groups.</p>
     </div>
+
+    <form>
+        <div class="form-group col-md-4" >
+            <!--<label for="sel1">Select list (select one):</label>-->
+            <select class="form-control" id="sel1">
+                <option>Choose Cohort..</option>
+                <option>Cohort 11.16</option>
+                <option>Cohort 1.16</option>
+            </select>
+        </div>
+        <!--<div class="col-md-4">-->
+            <div class="input-group col-md-4">
+                <!--<label for="">Add Student to Cohort</label>-->
+                <input type="text" class="form-control" placeholder="Student Name">
+                <span class="input-group-btn">
+                    <button class="btn btn-secondary" type="button">Add</button>
+                </span>
+            </div>
+        <!--</div>-->
+    </form>
 </div><!-- /.container -->
 
 <!--QA Picks Rand Group / Rand Student-->
 <div class="container" id="saQa">
     <div class="middleDiv">
         <h1>SA and QA</h1>
-        <p class="lead">Picks Random Group and Random Student in Group<br> Generates team names from 2 arrays, adjectiveArr and nounArr</p>
+        <p class="lead">Picks Random Group and Random Student in Group<br> Generates team names from 2 arrays,
+            adjectiveArr and nounArr</p>
     </div>
 </div><!-- /.container -->
 
@@ -59,7 +85,8 @@
 <div class="container" id="ranVolunteer">
     <div class="middleDiv">
         <h1>Random Volunteer</h1>
-        <p class="lead">Picks a random volunteer from list of students.<br> Congrats, everyone took a step back and left you out in front.</p>
+        <p class="lead">Picks a random volunteer from list of students.<br> Congrats, everyone took a step back and left
+            you out in front.</p>
     </div>
 </div><!-- /.container -->
 
@@ -67,7 +94,8 @@
 <div class="container" id="whiteBoard">
     <div class="middleDiv">
         <h1>White Board Questions</h1>
-        <p class="lead">Allows you to randomize or choose specific question for whiteboard.<br> Displays the question in a large format.</p>
+        <p class="lead">Allows you to randomize or choose specific question for whiteboard.<br> Displays the question in
+            a large format.</p>
     </div>
 </div><!-- /.container -->
 
