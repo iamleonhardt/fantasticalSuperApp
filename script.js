@@ -21,7 +21,19 @@
 // Chooses group order
 // Chooses random funny name for groups
 // Chooses which student is called on for question
-
+function group_order(num_of_groups){
+    var up_next = [];
+    var temp = null;
+    for(var i = 1; i <= num_of_groups; i++){
+        temp = (Math.floor(Math.random()*(num_of_groups - 1) + 1));
+        for(var k=1; k=1; k++){
+            if(up_next[k] !== temp){
+                up_next.push(temp)
+            }
+        }
+    }
+    console.log(up_next)
+}
 
 
 
