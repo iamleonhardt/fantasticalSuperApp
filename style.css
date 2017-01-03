@@ -1,6 +1,9 @@
 body {
     font-family: Roboto, Arial, sans-serif
+    padding-top: 50px;
+    position:relative;
 }
+
 .card {
     display: inline-block;
     width: 150px;
@@ -10,4 +13,54 @@ body {
     overflow: hidden;
     border-radius: 10px;
     border: solid grey 1px;
+}
+
+.middleDiv {
+    /*padding: 10px 15px;*/
+    /*text-align: center;*/
+}
+
+.sections {
+    padding-top:50px;
+    height:850px;
+    color: #5d5d5d;
+}
+
+#assignGroups {
+    background-color: #ffffff;
+}
+#saQa {
+    background-color: #f8f8f8;
+}
+#volunteer {
+    background-color: #ffffff;
+}
+#whiteboards {
+    background-color: #f8f8f8;
+}
+#funCards {
+    background-color: #ffffff;
+}
+
+.glyphicon-remove-circle {
+    font-size: 14px;
+    left: 4px;
+}
+
+.label-student {
+    display: inline-block;
+    line-height: 1.4;
+    padding: 0 .6em;
+}
+
+.student {
+    background-color: #e3e3e3;
+    /*margin: 10px;*/
+    padding:0 ;
+    height: 24px;
+    border-radius: 5px;
+}
+
+.addStudentForm {
+    margin: 30px 0;
 }

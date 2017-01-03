@@ -1,27 +1,211 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <title>Fantastical Super Device</title>
+    <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
-    <title>Dan's Fantastical Super Device</title>
 </head>
-<body>
-<h1>Dan's Fantastical Super Device</h1>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Fantastical Super Device</a>
+        </div>
+        <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#assignGroups">Assign Groups</a></li>
+                    <li><a href="#saQa">SA/QA</a></li>
+                    <li><a href="#volunteer">Volunteer</a></li>
+                    <li><a href="#whiteboards">Whiteboards</a></li>
+                    <li><a href="#funCards">Cards</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
 
 <!--Creates Cohorts-->
 <!--Assigns Groups-->
+<div id="assignGroups" class="sections container-fluid">
+
+    <div class="container middleDiv">
+        <h1>Assigns Groups</h1>
+        <p class="lead">Assigns groups for group projects.<br>Can drag and drop students into new groups.</p>
+    </div><br>
+
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#menu1">Cohort 11.16</a></li>
+            <li><a data-toggle="tab" href="#menu2">Cohort 1.17</a></li>
+            <li><a data-toggle="tab" href="#menu3">Cohort 2.17</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="menu1" class="tab-pane fade in active">
+
+                <!--Cohort Name-->
+                <h3>Cohort 11.16</h3>
+                <!--Student List-->
+                <h3 id="c1116studentList">
+                </h3>
+
+                <!--Add Student Form-->
+                <form class="addStudentForm form-inline">
+                    <label for="c1116addStudentInput">Add a Student to this Cohort</label><br>
+                    <div class="form-group">
+                        <input type="text" class="addStudentInput form-control" id="c1116addStudentInput"
+                               placeholder="Add Student">
+                        <div class="checkbox">
+                        </div>
+                    </div>
+                    <button type="button" class="addStudentBtn btn btn-default">Add</button>
+                    <br>
+                    <input type="checkbox" id="c1116leaderCheckbox"> Leader
+                </form>
+
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <!--Cohort Name-->
+                <h3>Cohort 1.17</h3>
+                <!--Student List-->
+                <h3 id="c117studentList">
+
+                </h3>
+
+                <!--Add Student Form-->
+                <form class="addStudentForm form-inline">
+                    <label for="exampleInputEmail3">Add a Student to this Cohort</label><br>
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputEmail3">Add Student</label>
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Add Student">
+                        <div class="checkbox">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-default">Add</button>
+                    <br>
+                    <input type="checkbox"> Leader
+                </form>
+
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                <!--Cohort Name-->
+                <h3>Cohort 2.17</h3>
+                <!--Student List-->
+
+                <!--Add Student Form-->
+                <form class="addStudentForm form-inline">
+                    <label for="exampleInputEmail3">Add a Student to this Cohort</label><br>
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputEmail3">Add Student</label>
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Add Student">
+                        <div class="checkbox">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-default">Add</button>
+                    <br>
+                    <input type="checkbox"> Leader
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container middleDiv">
+        <h1>Assigns Groups</h1>
+        <p class="lead">Assigns groups for group projects.<br>Can drag and drop students into new groups.</p>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Select a Cohort
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">c11.16</a></li>
+            <li><a href="#">c1.17</a></li>
+            <li><a href="#">c2.17</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+        </ul>
+    </div>
+
+    <div class="form-group col-md-2">
+        <label for="sel1">Select Cohort:</label>
+        <select class="form-control" id="sel1">
+            <option>c11.16</option>
+            <option>c1.17</option>
+            <option>c2.17</option>
+        </select>
+    </div>
+
+</div><!-- /.container -->
+
 <!--QA Picks Rand Group / Rand Student-->
-<!--Rand Volunteer-->
+<div id="saQa" class="sections container-fluid">
+    <div class="container middleDiv">
+        <h1>SA and QA</h1>
+        <p class="lead">Picks Random Group and Random Student in Group<br> Generates team names from 2 arrays,
+            adjectiveArr and nounArr</p>
+    </div>
+</div><!-- /.container -->
+
+<!--Random Volunteer-->
+<div id="volunteer" class="sections container-fluid">
+    <div class="container middleDiv">
+        <h1>Random Volunteer</h1>
+        <p class="lead">Picks a random volunteer from list of students.<br> Congrats, everyone took a step back and
+            left
+            you out in front.</p>
+    </div>
+</div><!-- /.container -->
+
+
 <!--White Board Questions-->
+<div id="whiteboards" class="sections container-fluid">
+    <div class="container middleDiv">
+        <h1>White Board Questions</h1>
+        <p class="lead">Allows you to randomize or choose specific question for whiteboard.<br> Displays the
+            question in
+            a large format.</p>
+    </div>
+</div><!-- /.container -->
+
 <!--Drunk Cards-->
-<div>
+
+<div id="funCards" class="sections container-fluid">
+    <div class="container middleDiv">
+        <h1>Fun Cards</h1>
+        <p class="lead">Randomly chooses Card from game.<br> Displays the card. Possibly chooses random student?</p>
+    </div>
+  
+  <div>
     <div class="card">
         <div class="front"><img src="" alt=""></div>
         <div class="back"><img src="" alt="drunk, stoned, or stupid"></div>
@@ -32,5 +216,7 @@
     </div>
 </div>
 <button type="button" class="btn btn-success">Pick A Card</button>
+</div><!-- /.container -->
+
 </body>
 </html>
