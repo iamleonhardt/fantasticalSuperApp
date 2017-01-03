@@ -41,55 +41,136 @@
     </div>
 </nav>
 
+
 <!--Creates Cohorts-->
 <!--Assigns Groups-->
 <div id="assignGroups" class="sections container-fluid">
-    <div class="middleDiv">
+
+    <div class="container middleDiv">
+        <h1>Assigns Groups</h1>
+        <p class="lead">Assigns groups for group projects.<br>Can drag and drop students into new groups.</p>
+    </div><br>
+
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#menu1">Cohort 11.16</a></li>
+            <li><a data-toggle="tab" href="#menu2">Cohort 1.17</a></li>
+            <li><a data-toggle="tab" href="#menu3">Cohort 2.17</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="menu1" class="tab-pane fade in active">
+
+                <!--Cohort Name-->
+                <h3>Cohort 11.16</h3>
+                <!--Student List-->
+                <h3 id="c1116studentList">
+                </h3>
+
+                <!--Add Student Form-->
+                <form class="addStudentForm form-inline">
+                    <label for="c1116addStudentInput">Add a Student to this Cohort</label><br>
+                    <div class="form-group">
+                        <input type="text" class="addStudentInput form-control" id="c1116addStudentInput"
+                               placeholder="Add Student">
+                        <div class="checkbox">
+                        </div>
+                    </div>
+                    <button type="button" class="addStudentBtn btn btn-default">Add</button>
+                    <br>
+                    <input type="checkbox" id="c1116leaderCheckbox"> Leader
+                </form>
+
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <!--Cohort Name-->
+                <h3>Cohort 1.17</h3>
+                <!--Student List-->
+                <h3 id="c117studentList">
+
+                </h3>
+
+                <!--Add Student Form-->
+                <form class="addStudentForm form-inline">
+                    <label for="exampleInputEmail3">Add a Student to this Cohort</label><br>
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputEmail3">Add Student</label>
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Add Student">
+                        <div class="checkbox">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-default">Add</button>
+                    <br>
+                    <input type="checkbox"> Leader
+                </form>
+
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                <!--Cohort Name-->
+                <h3>Cohort 2.17</h3>
+                <!--Student List-->
+
+                <!--Add Student Form-->
+                <form class="addStudentForm form-inline">
+                    <label for="exampleInputEmail3">Add a Student to this Cohort</label><br>
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputEmail3">Add Student</label>
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Add Student">
+                        <div class="checkbox">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-default">Add</button>
+                    <br>
+                    <input type="checkbox"> Leader
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container middleDiv">
         <h1>Assigns Groups</h1>
         <p class="lead">Assigns groups for group projects.<br>Can drag and drop students into new groups.</p>
     </div>
-    <!--Inputs-->
-    <!--<form>-->
-    <!--<div class="form-group col-md-4" >-->
-    <!--&lt;!&ndash;<label for="sel1">Select list (select one):</label>&ndash;&gt;-->
-    <!--<select class="form-control" id="sel1">-->
-    <!--<option>Choose Cohort..</option>-->
-    <!--<option>Cohort 11.16</option>-->
-    <!--<option>Cohort 1.16</option>-->
-    <!--</select>-->
-    <!--</div>-->
-    <!--&lt;!&ndash;<div class="col-md-4">&ndash;&gt;-->
-    <!--<div class="input-group col-md-4">-->
-    <!--&lt;!&ndash;<label for="">Add Student to Cohort</label>&ndash;&gt;-->
-    <!--<input type="text" class="form-control" placeholder="Student Name">-->
-    <!--<span class="input-group-btn">-->
-    <!--<button class="btn btn-secondary" type="button">Add</button>-->
-    <!--</span>-->
-    <!--</div>-->
-    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-    <!--</form>-->
 
-    <p>
-        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false"
-           aria-controls="collapseExample">
-            Cohort 11.16
-        </a>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
-                aria-expanded="false" aria-controls="collapseExample">
-            Cohort 1.17
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Select a Cohort
+            <span class="caret"></span>
         </button>
-    </p>
-    <div class="collapse" id="collapseExample">
-        <div class="card card-block">
-            Cung, Sloan, Tammy, Brian, Miles, Mike, Jason, Sean G, Sean D, Patrick
-        </div>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">c11.16</a></li>
+            <li><a href="#">c1.17</a></li>
+            <li><a href="#">c2.17</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+        </ul>
+    </div>
+
+    <div class="form-group col-md-2">
+        <label for="sel1">Select Cohort:</label>
+        <select class="form-control" id="sel1">
+            <option>c11.16</option>
+            <option>c1.17</option>
+            <option>c2.17</option>
+        </select>
     </div>
 
 </div><!-- /.container -->
 
 <!--QA Picks Rand Group / Rand Student-->
 <div id="saQa" class="sections container-fluid">
-    <div class="middleDiv">
+    <div class="container middleDiv">
         <h1>SA and QA</h1>
         <p class="lead">Picks Random Group and Random Student in Group<br> Generates team names from 2 arrays,
             adjectiveArr and nounArr</p>
@@ -98,7 +179,7 @@
 
 <!--Random Volunteer-->
 <div id="volunteer" class="sections container-fluid">
-    <div class="middleDiv">
+    <div class="container middleDiv">
         <h1>Random Volunteer</h1>
         <p class="lead">Picks a random volunteer from list of students.<br> Congrats, everyone took a step back and
             left
@@ -109,7 +190,7 @@
 
 <!--White Board Questions-->
 <div id="whiteboards" class="sections container-fluid">
-    <div class="middleDiv">
+    <div class="container middleDiv">
         <h1>White Board Questions</h1>
         <p class="lead">Allows you to randomize or choose specific question for whiteboard.<br> Displays the
             question in
@@ -119,7 +200,7 @@
 
 <!--Drunk Cards-->
 <div id="funCards" class="sections container-fluid">
-    <div class="middleDiv">
+    <div class="container middleDiv">
         <h1>Fun Cards</h1>
         <p class="lead">Randomly chooses Card from game.<br> Displays the card. Possibly chooses random student?</p>
     </div>

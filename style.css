@@ -4,13 +4,13 @@ body {
 }
 
 .middleDiv {
-    padding: 10px 15px;
-    text-align: center;
+    /*padding: 10px 15px;*/
+    /*text-align: center;*/
 }
 
 .sections {
     padding-top:50px;
-    height:500px;
+    height:850px;
     color: #5d5d5d;
 }
 
@@ -28,4 +28,27 @@ body {
 }
 #funCards {
     background-color: #ffffff;
+}
+
+.glyphicon-remove-circle {
+    font-size: 14px;
+    left: 4px;
+}
+
+.label-student {
+    display: inline-block;
+    line-height: 1.4;
+    padding: 0 .6em;
+}
+
+.student {
+    background-color: #e3e3e3;
+    /*margin: 10px;*/
+    padding:0 ;
+    height: 24px;
+    border-radius: 5px;
+}
+
+.addStudentForm {
+    margin: 30px 0;
 }
