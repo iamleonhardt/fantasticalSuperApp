@@ -1,6 +1,18 @@
 body {
+    font-family: Roboto, Arial, sans-serif
     padding-top: 50px;
     position:relative;
+}
+
+.card {
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    position: relative;
+    margin: 1%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: solid grey 1px;
 }
 
 .middleDiv {
