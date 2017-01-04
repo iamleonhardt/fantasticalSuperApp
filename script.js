@@ -1,10 +1,18 @@
+/**
+ * Returns a random integer between minNum (inclusive) and maxNum (inclusive)
+ *
+ * @param minNum
+ * @param maxNum
+ * @returns {number}
+ */
+
+function getRandNum (minNum, maxNum){
+    return Math.floor(Math.random() * (maxNum - minNum + 1) + minNum );
+}
 
 // CREATES COHORTS
 // Input field that creates an array - cohort
 // Ability to add students to an array
-
-
-
 
 
 // Assign groups for team projects and SAs
@@ -12,9 +20,6 @@
 // Creates divs per group
 // Can drag drop students to groups
 // Keeps history of chosen groups?
-
-
-
 
 
 // Q&A
@@ -35,13 +40,9 @@ function group_order(num_of_groups){
     console.log(up_next)
 }
 
-
-
 // Random Volunteer
 // Chooses a random student
 // Can un-check which students it rolls
-
-
 
 
 // Random Whiteboard

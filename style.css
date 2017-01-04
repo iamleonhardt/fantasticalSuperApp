@@ -1,3 +1,31 @@
 body {
-    font-family: Roboto, Arial, sans-serif
+    padding-top: 50px;
+    position:relative;
+}
+
+.middleDiv {
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.sections {
+    padding-top:50px;
+    height:500px;
+    color: #5d5d5d;
+}
+
+#assignGroups {
+    background-color: #ffffff;
+}
+#saQa {
+    background-color: #f8f8f8;
+}
+#volunteer {
+    background-color: #ffffff;
+}
+#whiteboards {
+    background-color: #f8f8f8;
+}
+#funCards {
+    background-color: #ffffff;
 }
