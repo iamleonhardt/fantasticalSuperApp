@@ -26,6 +26,7 @@ function getRandNum (minNum, maxNum){
 // Chooses group order
 // Chooses random funny name for groups
 // Chooses which student is called on for question
+var name_array = [];
 function group_order(num_of_groups){
     var up_next = [];
     var temp = null;
@@ -42,6 +43,9 @@ function group_order(num_of_groups){
 function funny_names(){
     var group_name = adj_array[getRandNum(0,adj_array.length-1)] +' '+ noun_array[getRandNum(0,noun_array.length-1)] ;
     console.log(group_name)
+}
+function pick_name(name){
+    var rando_name = name_array[getRandNum(0,name_array.length-1)]
 }
 
 // Random Volunteer
